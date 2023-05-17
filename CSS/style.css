@@ -1,0 +1,292 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.clear {
+    clear: both;
+}
+
+.header {
+    background-color: #f8e1db;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.header .container {
+    padding: 15px 50px;
+
+}
+
+.header .container .logo {
+    padding-bottom: 15px;
+    display: block; /*chinh the inline thanh block*/
+}
+
+.header .container .navigation a{
+    margin-right: 15px;
+    text-decoration: none; /*thuoc tinh chinh dau gach chan the*/
+    color: #000;
+}
+
+.carousel {
+    background-image: url(../Image/BG.png);
+    height: 800px; /*thuoc tinh quy dinh chieu cao cua the*/
+    background-repeat: no-repeat; /*Tat lap lai cua hinh background*/
+    background-size: cover; /*chinh kich thuoc cua hinh */
+    background-position: center center; /*vi tri hinh load ra div*/
+}
+
+.products {
+    background: #faf4f2;
+}
+ /*Thuoc tinh thua huong tu css cha: color, font-size, text-align*/
+.products .container .product-tittle {
+    padding-top: 50px;
+    text-align: center;
+}
+
+.products .container .product-list {
+    padding-top: 30px;
+}
+
+.products .container .product-list .product-item {
+    float: left; /*Chinh cac div inline-block nam tren 1 hang load tu ben trai qua*/
+    width: 25%; /*width, height so voi the cha voi don vi %*/
+   box-sizing: border-box;
+   padding: 0 15px;
+   /*border: 1px solid #000;*/
+   background-color: #faf4f2;
+}
+
+.products .container .product-list .product-item .container{
+    background-color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 25px;
+}
+
+.products .container .product-list .product-item .container .thumbnail {
+    position: relative; /*Vi tri so voi truc body*/
+}
+
+.products .container .product-list .product-item .container .thumbnail img{
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 30px;
+}
+
+.products .container .product-list .product-item .container .thumbnail a{
+    position: absolute;
+    right: 30px;
+    top: 40px;
+    width: 30px;
+    background: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.products .container .product-list .product-item .container .thumbnail i{
+    color: red;
+}
+
+.products .container .product-list .product-item .container a{
+    display: inline-block;
+    text-align: center;
+    background: #e8e8e8;
+    padding: 15px 0;
+    width: 80%;
+    margin: 10px 15px;
+    border-radius: 30px;
+    color: #a3a3a3;
+    text-decoration: none;
+}
+
+.products .container .product-list .product-item .container h1{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.products .container .product-list .product-item .container p{
+    text-align: center;
+    color: #8d8d8d;
+    padding: 10px;
+}
+
+.products .container .viewall {
+    display: inline-block;
+    border: 1px solid;
+    padding: 10px 5px;
+    border-radius: 25px;
+    width: 20%;
+    text-decoration: none;
+    margin-top: 25px;
+    text-align: center;
+    margin-left: 40%;
+    margin-bottom: 40px;
+    color: red;
+}
+
+.products .container .viewall a{
+    color: red;
+    text-decoration: none;
+}
+
+.about {
+    background-color: #f8e1db;
+    position: relative;
+    border-radius: 15px;
+}
+.about .contact-image {
+    background-image: url(../Image/mask.png);
+    height: 250px;
+    width: 600px;
+    background-repeat: no-repeat;
+    background-position: top;
+    padding: 10px;
+    background-color: #f8e1db;
+}
+
+.about .contact-image .container img {
+    width: 18%;
+    position: absolute;
+    bottom: 0cm;
+    left: 4cm;
+}
+
+.about .contact-image .information {
+    position: absolute;
+    left: 730px;
+    padding: 15px;
+    color: #a39e9c ;
+    
+}
+
+.about .contact-image .app {
+    position: absolute;
+    float: left;
+}
+
+.about .contact-image .information .icon {
+    position: absolute;
+    left: -12px;
+    box-sizing: border-box;
+    margin: 27px;
+}
+
+.about .contact-image .information .icon a{
+    text-decoration: none;
+}
+
+.about .contact-image .information .icon .android {
+    width: 130px;
+
+}
+
+.about .contact-image .information .icon .apple{
+    width: 105px;
+    padding: 8px 0px;
+    
+}
+
+.about .contact-image .followus p{
+    width: 100px;
+    position: absolute;
+    right: 435px;
+    bottom: 123px;
+    color: #a39e9c;
+}
+
+.about .contact-image .followus .iconsocial{
+    position: absolute;
+    right: 464px;
+    bottom: 98px;
+    text-decoration: none;
+}
+
+.about .contact-image .followus .iconsocial a{
+    text-decoration: none;
+}
+.about .contact-image .followus .iconsocial i{
+    color: rgb(255, 0, 0);
+}
+
+.footer {
+    position: relative;
+    width: 97%;
+    height: 250px;
+    padding: 17px 24px;
+    margin-top: 88px;
+    margin-bottom: 0px;
+    /* border: 1px solid; */
+    background: #f8e1db;
+    border-radius: 51px;
+}
+
+.footer .container{
+    float: left;
+    display: inline-block;
+}
+
+.footer .container .information-footer .info {
+    width: 40%;
+    padding: 10px;
+}
+
+.footer .container .information-footer .info h4{
+    position: relative;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.footer .container .information-footer .link {
+    position: absolute;
+    color: #000;
+    top: 17px;
+    left: 695px;
+    padding: 9px;
+    margin-bottom: 27px;
+    line-height: 23px;
+}
+.footer .container .information-footer .link a{
+    text-decoration: none;
+    color: #000;
+
+}
+.footer .container .information-footer .plan {
+    position: absolute;
+    color: #000;
+    top: 17px;
+    left: 970px;
+    padding: 9px;
+    margin-bottom: 27px;
+    line-height: 23px;
+}
+.footer .container .information-footer .plan a{
+    text-decoration: none;
+    color: #000;
+}
+.footer .container .information-footer .account {
+    position: absolute;
+    color: #000;
+    top: 17px;
+    left: 1221px;
+    padding: 9px;
+    margin-bottom: 27px;
+    line-height: 23px;
+}
+
+.footer .container .information-footer .account a{
+    text-decoration: none;
+    color: #000;
+}
+
+.footer .container .year {
+    text-align: center;
+    color: #000;
+    padding: 60px;
+}
